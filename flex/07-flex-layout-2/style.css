@@ -8,12 +8,14 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  
 }
 
 .sidebar {
@@ -25,4 +27,57 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+/* my code starts here */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  padding-top: 16px;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+ 
+}
+
+ul {
+  list-style-type: none;
+  
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar {
+  flex-shrink: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.container .card-main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.container .card {
+  align-self: center;
+  width: 200px;
+  padding: 32px;
+ 
 }
